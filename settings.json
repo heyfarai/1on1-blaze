@@ -1,0 +1,16 @@
+{
+  "public": {
+    "site.name": "1:1 Guide",
+    "site.title": "1:1 Definitive Guide",
+    "site.copyrightYear": "2024",
+    "site.copyrightOwner": "Farai Madzima",
+    "site.tierNameBasic": "Basic",
+    "site.tierNamePlus": "High Impact",
+    "site.tierNameTeam": "Team",
+    "site.contentSignUp": "Join Waitlist",
+    "site.siteName": "1:1 Definitive Guide"
+  },
+  "private": {
+    "secretKey": "This is private"
+  }
+}

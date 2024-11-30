@@ -1,0 +1,90 @@
+<template name="footer">
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-black mt-24 py-24">
+    <div
+      class="footer-content w-full max-w-[76rem] px-8 sm:px-6 lg:px-8 mx-auto"
+    >
+      <!-- Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-10">
+        <!-- Col -->
+        <div class="col-span-full lg:col-span-1 hidden md:block">
+          <a
+            class="flex-none font-semibold text-xl text-gray-100 focus:outline-none focus:opacity-80"
+            href="{{ site.url }}"
+            aria-label="Brand"
+            >{{ settings "site.name" }}</a
+          >
+        </div>
+        <!-- End Col -->
+        <!-- Col -->
+        <div>
+          <h4 class="font-semibold text-gray-100">For your 1:1s</h4>
+
+          <div class="mt-3 grid space-y-5 text-sm text-gray-400">
+            {{#each footerLinks}}
+            <p>
+              <a
+                class="inline-flex gap-x-2 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                href="{{ url }}"
+                >{{ text }}</a
+              >
+            </p>
+            {{/each}}
+          </div>
+        </div>
+        <!-- End Col -->
+        <!-- Get More Col -->
+        <div>
+          <h4 class="font-semibold text-gray-100">Get more</h4>
+
+          <div class="mt-3 grid space-y-5 text-sm text-gray-400">
+            {{#each getMoreLinks}}
+            <p>
+              {{#if url}}
+              <a
+                class="inline-flex gap-x-2 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                href="{{ link.url }}"
+                >{{ text }}</a
+              >
+              {{/if}}
+            </p>
+            {{/each}}
+          </div>
+        </div>
+        <!-- End Col -->
+        <!-- Resources Col -->
+        <div>
+          <h4 class="font-semibold text-gray-100">Resources</h4>
+
+          <div class="mt-3 grid space-y-5 text-sm text-gray-400">
+            {{#each resourceLinks}}
+            <p>
+              <a
+                class="inline-flex gap-x-2 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                href="{{ url }}"
+                >{{ text }}</a
+              >
+            </p>
+            {{/each}}
+          </div>
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Grid -->
+
+      <div class="pt-5 mt-16">
+        <a
+          class="md:hidden flex-none font-semibold text-xl text-gray-100 focus:outline-none focus:opacity-80"
+          href="{{ site.url }}"
+          aria-label="Brand"
+          >{{ settings "site.title" }}</a
+        >
+        <p class="mt-1 text-xs sm:text-sm text-gray-100">
+          © {{ settings "site.copyrightYear" }} {{ settings
+          "site.copyrightOwner" }}
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- ========== END FOOTER ========== -->
+</template>

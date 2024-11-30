@@ -9,12 +9,13 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.23.5",
-    "jquery": "^3.7.1",
-    "meteor-node-stubs": "^1.2.12",
     "@popperjs/core": "^2.11.8",
     "@preline/overlay": "^2.4.1",
     "@preline/toggle-count": "^2.4.1",
-    "@preline/tooltip": "^2.4.1"
+    "@preline/tooltip": "^2.4.1",
+    "jquery": "^3.7.1",
+    "meteor-node-stubs": "^1.2.12",
+    "preline": "^2.5.1"
   },
   "meteor": {
     "mainModule": {
@@ -22,5 +23,12 @@
       "server": "server/main.js"
     },
     "testModule": "tests/main.js"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.8",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "postcss-load-config": "^6.0.1",
+    "tailwindcss": "^3.4.15"
   }
 }
